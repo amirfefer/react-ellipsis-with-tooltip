@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ellipsis Ellipse and create a tooltip on anchor elemennt 1`] = `
+<EllipisWithTooltip
+  id="a"
+  placement="top"
+>
+  <OverlayTrigger
+    defaultOverlayShown={false}
+    overlay={
+      <Tooltip
+        bsClass="tooltip"
+        id="tooltip-0.07856797543354332"
+        placement="right"
+      >
+         long text 
+      </Tooltip>
+    }
+    placement="top"
+    trigger={
+      Array [
+        "hover",
+        "focus",
+      ]
+    }
+  >
+    <div
+      onBlur={[Function]}
+      onClick={null}
+      onFocus={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={
+        Object {
+          "overflow": "hidden",
+          "overflowWrap": "break-word",
+          "textOverflow": "ellipsis",
+          "whiteSpace": "nowrap",
+          "wordBreak": "break-all",
+        }
+      }
+    >
+       
+      <a
+        href="#"
+      >
+         long text 
+      </a>
+       
+    </div>
+  </OverlayTrigger>
+</EllipisWithTooltip>
+`;
+
+exports[`Ellipsis use bottom tooltip placement 1`] = `
+<EllipisWithTooltip
+  id="a"
+  placement="bottom"
+>
+  <OverlayTrigger
+    defaultOverlayShown={false}
+    overlay={
+      <Tooltip
+        bsClass="tooltip"
+        id="tooltip-0.12026878981851041"
+        placement="right"
+      >
+        text
+      </Tooltip>
+    }
+    placement="bottom"
+    trigger={
+      Array [
+        "hover",
+        "focus",
+      ]
+    }
+  >
+    <div
+      onBlur={[Function]}
+      onClick={null}
+      onFocus={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={
+        Object {
+          "overflow": "hidden",
+          "overflowWrap": "break-word",
+          "textOverflow": "ellipsis",
+          "whiteSpace": "nowrap",
+          "wordBreak": "break-all",
+        }
+      }
+    >
+       
+      text
+       
+    </div>
+  </OverlayTrigger>
+</EllipisWithTooltip>
+`;
