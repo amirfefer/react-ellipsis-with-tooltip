@@ -20,7 +20,8 @@
     "build-examples": "webpack --config examples/webpack.config.babel.js --progress",
     "start": "webpack-dev-server --config examples/webpack.config.live.babel.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "react": "^16.0.0",
@@ -31,6 +32,7 @@
     "@storybook/addon-actions": "^3.3.3",
     "@storybook/addon-links": "^3.3.3",
     "@storybook/react": "^3.3.3",
+    "@storybook/storybook-deployer": "^2.2.0",
     "babel-eslint": "^8.0.1",
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.0.0",
