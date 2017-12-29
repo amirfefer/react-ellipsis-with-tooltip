@@ -1,6 +1,7 @@
 # react-ellipsis-and-tooltip
 
 truncates (with ellipsis) overflowing text elements and adds a tooltip
+
 Try via [stroybook](https://amirfefer.github.io/react-ellipsis-with-tooltip/
 )
 
