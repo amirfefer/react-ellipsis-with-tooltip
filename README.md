@@ -8,7 +8,7 @@ Try via [stroybook](https://amirfefer.github.io/react-ellipsis-with-tooltip/
 ## Usage
 
 1. Install package
-   > npm --save react-ellipsis-with-tooltip
+   > npm install --save react-ellipsis-with-tooltip
 
 2. Import it
 
