@@ -49,7 +49,7 @@ class EllipisWithTooltip extends React.Component {
 
 export default EllipisWithTooltip;
 
-EllipisWithTooltip.PropTypes = {
+EllipisWithTooltip.propTypes = {
     placement: PropTypes.string,
-    children: PropTypes.element.isRequired,
+    children: PropTypes.node.isRequired,
 }
