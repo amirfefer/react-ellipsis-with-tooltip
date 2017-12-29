@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/#USER_NAME#/#APP_NAME#.git"
+    "url": "https://github.com/amirfefer/react-ellipsis-with-tooltip.git"
   },
   "author": "amirfefer",
   "bugs": {
-    "url": "https://github.com/#USER_NAME#/#APP_NAME#/issues"
+    "url": "https://github.com/amirfefer/react-ellipsis-with-tooltip/issues"
   },
-  "homepage": "https://github.com/#USER_NAME#/#APP_NAME#",
+  "homepage": "https://github.com/amirfefer/react-ellipsis-with-tooltip",
   "scripts": {
     "build": "webpack --config webpack.config.babel.js",
     "release": "webpack --p --config webpack.config.babel.js",

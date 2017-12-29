@@ -10,7 +10,7 @@ truncates (with ellipsis) overflowing text elements and adds a tooltip
 2. Import it
 
     ```javascript
-    import EllipsisWithTooltip from 'reac-ellipsis-with-tooltip'
+    import EllipsisWithTooltip from 'react-ellipsis-with-tooltip'
     ```
 3. Wrap with text elements
 
