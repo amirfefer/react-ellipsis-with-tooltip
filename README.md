@@ -1,6 +1,7 @@
 # react-ellipsis-and-tooltip
+Recognizes whether a text element is overflowed,
 
-truncates (with ellipsis) overflowing text elements and adds a tooltip
+truncates (with ellipsis) it and adds a tooltip.
 
 Try via [stroybook](https://amirfefer.github.io/react-ellipsis-with-tooltip/
 )
@@ -22,7 +23,7 @@ Try via [stroybook](https://amirfefer.github.io/react-ellipsis-with-tooltip/
 ```javascript
 <td>
   <EllipsisWithTooltip placement="bottom">
-     Long Text
+     Lorem Ipsum
   </EllipsisWithTooltip>
 <td>      
 ```
@@ -31,7 +32,7 @@ Try via [stroybook](https://amirfefer.github.io/react-ellipsis-with-tooltip/
 ```javascript
 <td>
   <EllipsisWithTooltip placement="bottom">
-    <a href="#"> Long link </a> 
+    <a href="#">  Lorem Ipsum </a> 
   </EllipsisWithTooltip>
 <td>      
 ```
