@@ -1,12 +1,12 @@
 import React from 'react';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import uuidV4 from 'uuid/v4';
 import './style.css';
 
 class EllipisWithTooltip extends React.Component {
   constructor(props) {
     super(props);
-    this.domId = `test-${Math.random()}`;
     this.state = {
       hasOverflowingChildren: false,
       text: undefined,
@@ -30,7 +30,7 @@ class EllipisWithTooltip extends React.Component {
   render() {
     const { hasOverflowingChildren, text } = this.state;
     const { placement = 'top', children } = this.props;
-    const tooltip = <Tooltip id={`tooltip-${Math.random()}`}>{text}</Tooltip>;
+    const tooltip = <Tooltip id={`tooltip-${uuidV4()}`}>{text}</Tooltip>;
 
     return hasOverflowingChildren ? (
       <OverlayTrigger

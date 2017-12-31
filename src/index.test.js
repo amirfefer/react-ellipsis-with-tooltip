@@ -7,6 +7,7 @@ import EllipisWithTooltip from './index';
 
 Enzyme.configure({ adapter: new Adapter() });
 jest.unmock('./index');
+jest.mock('uuid/v4', () => jest.fn(() => 1) );
 
 function setup(children, placement = 'top') {
   return mount(<EllipisWithTooltip id="a" placement={placement}>{children}</EllipisWithTooltip>);

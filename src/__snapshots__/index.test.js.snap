@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Ellipsis Ellipse and create a tooltip on anchor elemennt 1`] = `
+exports[`Ellipsis create a tooltip  and elipsis on anchor elemennt 1`] = `
 <EllipisWithTooltip
   id="a"
   placement="top"
@@ -10,7 +10,7 @@ exports[`Ellipsis Ellipse and create a tooltip on anchor elemennt 1`] = `
     overlay={
       <Tooltip
         bsClass="tooltip"
-        id="tooltip-0.07856797543354332"
+        id="tooltip-1"
         placement="right"
       >
          long text 
@@ -25,20 +25,12 @@ exports[`Ellipsis Ellipse and create a tooltip on anchor elemennt 1`] = `
     }
   >
     <div
+      className="ellipsis"
       onBlur={[Function]}
       onClick={null}
       onFocus={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
-      style={
-        Object {
-          "overflow": "hidden",
-          "overflowWrap": "break-word",
-          "textOverflow": "ellipsis",
-          "whiteSpace": "nowrap",
-          "wordBreak": "break-all",
-        }
-      }
     >
        
       <a
@@ -62,7 +54,7 @@ exports[`Ellipsis use bottom tooltip placement 1`] = `
     overlay={
       <Tooltip
         bsClass="tooltip"
-        id="tooltip-0.12026878981851041"
+        id="tooltip-1"
         placement="right"
       >
         text
@@ -77,20 +69,12 @@ exports[`Ellipsis use bottom tooltip placement 1`] = `
     }
   >
     <div
+      className="ellipsis"
       onBlur={[Function]}
       onClick={null}
       onFocus={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
-      style={
-        Object {
-          "overflow": "hidden",
-          "overflowWrap": "break-word",
-          "textOverflow": "ellipsis",
-          "whiteSpace": "nowrap",
-          "wordBreak": "break-all",
-        }
-      }
     >
        
       text
