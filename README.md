@@ -1,7 +1,8 @@
+[![Build Status](https://travis-ci.org/amirfefer/react-ellipsis-with-tooltip.svg)](https://travis-ci.org/amirfefer/react-ellipsis-with-tooltip)
 # react-ellipsis-and-tooltip
 Recognizes whether a text element is overflowed,
 
-truncates (with ellipsis) it and adds a tooltip.
+truncates (with ellipsis) it and adds bootstrap's tooltip.
 
 Try via [stroybook](https://amirfefer.github.io/react-ellipsis-with-tooltip/
 )
