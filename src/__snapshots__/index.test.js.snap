@@ -25,20 +25,79 @@ exports[`Ellipsis create a tooltip  and elipsis on anchor elemennt 1`] = `
     }
   >
     <div
-      className="ellipsis"
       onBlur={[Function]}
       onClick={null}
       onFocus={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
+      style={
+        Object {
+          "overflow": "hidden",
+          "overflowWrap": "break-word",
+          "textOverflow": "ellipsis",
+          "whiteSpace": "nowrap",
+          "wordBreak": "break-all",
+        }
+      }
     >
-       
       <a
         href="#"
       >
          long text 
       </a>
-       
+    </div>
+  </OverlayTrigger>
+</EllipisWithTooltip>
+`;
+
+exports[`Ellipsis should override styles 1`] = `
+<EllipisWithTooltip
+  id="a"
+  placement="top"
+  style={
+    Object {
+      "overflow": "b",
+      "someNewStyle": "a",
+    }
+  }
+>
+  <OverlayTrigger
+    defaultOverlayShown={false}
+    overlay={
+      <Tooltip
+        bsClass="tooltip"
+        id="tooltip-1"
+        placement="right"
+      >
+        some text
+      </Tooltip>
+    }
+    placement="top"
+    trigger={
+      Array [
+        "hover",
+        "focus",
+      ]
+    }
+  >
+    <div
+      onBlur={[Function]}
+      onClick={null}
+      onFocus={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      style={
+        Object {
+          "overflow": "b",
+          "overflowWrap": "break-word",
+          "someNewStyle": "a",
+          "textOverflow": "ellipsis",
+          "whiteSpace": "nowrap",
+          "wordBreak": "break-all",
+        }
+      }
+    >
+      some text
     </div>
   </OverlayTrigger>
 </EllipisWithTooltip>
@@ -69,16 +128,22 @@ exports[`Ellipsis use bottom tooltip placement 1`] = `
     }
   >
     <div
-      className="ellipsis"
       onBlur={[Function]}
       onClick={null}
       onFocus={[Function]}
       onMouseOut={[Function]}
       onMouseOver={[Function]}
+      style={
+        Object {
+          "overflow": "hidden",
+          "overflowWrap": "break-word",
+          "textOverflow": "ellipsis",
+          "whiteSpace": "nowrap",
+          "wordBreak": "break-all",
+        }
+      }
     >
-       
       text
-       
     </div>
   </OverlayTrigger>
 </EllipisWithTooltip>
