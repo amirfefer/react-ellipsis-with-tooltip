@@ -1,6 +1,6 @@
 {
   "name": "react-ellipsis-with-tooltip",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "truncates (with ellipsis) overflowing text elements and adds a tooltip",
   "license": "MIT",
   "repository": {
