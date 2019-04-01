@@ -41,10 +41,10 @@
     "babel-jest": "^22.0.4",
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "enzyme": "^3.2.0",
-    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
     "enzyme-to-json": "^3.3.0",
     "eslint": "^4.9.0",
     "eslint-plugin-react": "^7.4.0",
@@ -58,6 +58,7 @@
   },
   "jest": {
     "verbose": true,
+    "testURL": "http://localhost/",
     "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.js",
