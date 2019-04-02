@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import uuidV4 from 'uuid/v4';
 
 const ellipsisDefaultStyle = {
-    overflow: 'hidden',
-    overflowWrap: 'break-word',
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
-    wordBreak: 'break-all',
+  overflow: 'hidden',
+  overflowWrap: 'break-word',
+  textOverflow: 'ellipsis',
+  whiteSpace: 'nowrap',
+  wordBreak: 'break-all',
 };
 
 class EllipisWithTooltip extends React.Component {
@@ -36,30 +36,47 @@ class EllipisWithTooltip extends React.Component {
 
   render() {
     const { hasOverflowingChildren, text } = this.state;
-    const { placement = 'top', style = {}, children } = this.props;
+    const {
+      placement = 'top',
+      style = {},
+      delayShow,
+      delayHide,
+      children,
+    } = this.props;
     const tooltip = <Tooltip id={`tooltip-${uuidV4()}`}>{text}</Tooltip>;
 
     const ellipsisStyle = { ...ellipsisDefaultStyle, ...style };
 
     return hasOverflowingChildren ? (
       <OverlayTrigger
-        placement = {placement}
+        placement={placement}
         overlay={tooltip}
+        delayShow={delayShow}
+        delayHide={delayHide}
       >
         <div style={ellipsisStyle}>{children}</div>
       </OverlayTrigger>
     ) : (
       <div style={ellipsisStyle} onMouseEnter={this.updateOverflow}>
-        {this.props.children}
+        {children}
       </div>
     );
   }
 }
 
 EllipisWithTooltip.propTypes = {
-    placement: PropTypes.string,
-    children: PropTypes.node.isRequired,
-    style: PropTypes.object,
+  placement: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  style: PropTypes.object,
+  delayShow: PropTypes.number,
+  delayHide: PropTypes.number,
+};
+
+EllipisWithTooltip.defaultProps = {
+  placement: undefined,
+  style: undefined,
+  delayHide: undefined,
+  delayShow: undefined,
 };
 
 export default EllipisWithTooltip;
