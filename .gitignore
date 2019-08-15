@@ -59,3 +59,9 @@ typings/
 
 # compiled
 dist
+
+# I don't see this committed, so putting in ignore
+package-lock.json
+
+# vim swap files
+**/*.swp
