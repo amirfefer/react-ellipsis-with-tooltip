@@ -3,3 +3,4 @@ dist/*.js
 coverage
 package-lock.json
 .idea
+**/*.swp

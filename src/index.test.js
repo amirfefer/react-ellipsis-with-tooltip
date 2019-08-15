@@ -65,4 +65,25 @@ describe('Ellipsis', () => {
 
     expect(toJson(wrapper)).toMatchSnapshot();
   });
+
+  it('should update text when props change', () => {
+    const wrapper = setup('this is some long text');
+    let domElement = wrapper.find('#a div').getDOMNode();
+
+    expect(wrapper.state().hasOverflowingChildren).toEqual(false);
+    Object.defineProperty(domElement, 'clientWidth', { get() { return 300; } });
+    Object.defineProperty(domElement, 'scrollWidth', { get() { return 400; } });
+    wrapper.find('#a div').simulate('mouseEnter');
+    expect(wrapper.state().hasOverflowingChildren).toEqual(true);
+
+    expect(wrapper.state().text).toEqual('this is some long text');
+    wrapper.setProps({children: 'this changed'});
+    expect(wrapper.state().hasOverflowingChildren).toEqual(false);
+    domElement = wrapper.find('#a div').getDOMNode();
+    Object.defineProperty(domElement, 'clientWidth', { get() { return 300; } });
+    Object.defineProperty(domElement, 'scrollWidth', { get() { return 400; } });
+    wrapper.find('#a div').simulate('mouseEnter');
+    expect(wrapper.state().hasOverflowingChildren).toEqual(true);
+    expect(wrapper.state().text).toEqual('this changed');
+  });
 });
