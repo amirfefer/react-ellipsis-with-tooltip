@@ -19,8 +19,12 @@ Try via [stroybook](https://amirfefer.github.io/react-ellipsis-with-tooltip)
 
 ## Installation
 
-```sh
+```console
 npm install --save react-ellipsis-with-tooltip
+```
+or
+```console
+yarn add react-ellipsis-with-tooltip
 ```
 
 ## Usage
