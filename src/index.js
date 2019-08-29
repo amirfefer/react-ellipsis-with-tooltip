@@ -17,6 +17,7 @@ class EllipisWithTooltip extends React.Component {
     this.state = {
       hasOverflowingChildren: false,
       text: undefined,
+      prevPropsChildren: props.children,
     };
     this.updateOverflow = this.updateOverflow.bind(this);
   }
@@ -35,9 +36,12 @@ class EllipisWithTooltip extends React.Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.children === this.props.children) return;
-    this.setState({ hasOverflowingChildren: false });
+  static getDerivedStateFromProps(props, state) {
+    if (props.children === state.prevPropsChildren) return null;
+    return {
+      hasOverflowingChildren: false,
+      prevPropsChildren: props.children,
+    };
   }
 
   render() {
