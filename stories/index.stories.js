@@ -1,8 +1,7 @@
 import React from 'react';
-import { Alert } from 'react-bootstrap'
+import { Alert } from 'react-bootstrap';
 import { storiesOf } from '@storybook/react';
 import EllipisWithTooltip from '../src/index';
-
 
 storiesOf('EllipisWithTooltip', module)
   .add('in a table cell', () => (
@@ -24,7 +23,9 @@ storiesOf('EllipisWithTooltip', module)
             </EllipisWithTooltip>
           </td>
           <td>
-            <EllipisWithTooltip placement="bottom">Lorem ipsum</EllipisWithTooltip>
+            <EllipisWithTooltip placement="bottom">
+              Lorem ipsum
+            </EllipisWithTooltip>
           </td>
         </tr>
       </tbody>
@@ -58,11 +59,10 @@ storiesOf('EllipisWithTooltip', module)
   ))
 
   .add('in alert', () => (
-    <Alert style={{width: '350px'}} bsStyle="warning">
-         <EllipisWithTooltip placement="bottom">
-       <strong> Lorem ipsum! </strong> dolor sit amet, consectetur adipiscing elit Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit.
+    <Alert style={{ width: '350px' }} bsStyle="warning">
+      <EllipisWithTooltip placement="bottom">
+        <strong> Lorem ipsum! </strong> dolor sit amet, consectetur adipiscing
+        elit Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </EllipisWithTooltip>
-  </Alert>
+    </Alert>
   ));
-

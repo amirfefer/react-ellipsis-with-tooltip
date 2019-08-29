@@ -20,6 +20,7 @@ class EllipisWithTooltip extends React.Component {
     };
     this.updateOverflow = this.updateOverflow.bind(this);
   }
+
   updateOverflow(e) {
     const el = e.target;
     const { hasOverflowingChildren, text } = this.state;
