@@ -30,9 +30,9 @@
   },
   "peerDependencies": {
     "prop-types": "^15.5.10",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
-    "react-bootstrap": "0.31.x || 0.32.x"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-bootstrap": "0.31.x || 0.32.x || 0.33.x"
   },
   "main": "dist/index.js",
   "files": [
@@ -77,7 +77,7 @@
     "rimraf": "^3.0.0",
     "raf": "^3.4.0",
     "react": "^16.3.0",
-    "react-bootstrap": "^0.31.5",
+    "react-bootstrap": "^0.33.1",
     "react-dom": "^16.3.0"
   },
   "optionalDependencies": {
